@@ -6,7 +6,7 @@ use App\Http\Controllers\Dashboard\BacklinkController;
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
